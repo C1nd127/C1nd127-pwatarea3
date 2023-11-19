@@ -1,0 +1,59 @@
+/* Estilo general del menú */
+nav {
+    background-color: #f0e6f7; /* Fondo en tono pastel */
+    color: #333;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de los elementos del menú principal */
+.menu-item {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+.menu-item a {
+    display: block;
+    padding: 10px 20px;
+    color: #5d536b; /* Color del texto */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item a:hover {
+    background-color: #decbe4; /* Color al pasar el ratón sobre los elementos */
+    color: #3e276a; /* Color del texto al pasar el ratón */
+}
+
+/* Estilo del submenú */
+.submenu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    background-color: #ffffff; /* Fondo claro para el submenú */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.submenu a:hover {
+    background-color: #e4bad4; /* Color al pasar el ratón sobre los subelementos */
+}
+
+/* Clase para mostrar el submenú */
+.show {
+    display: block;
+}
